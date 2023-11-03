@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>nadezhdanik Tetris</title>
+</head>
+
+<body>
+    <audio src="assets/music/korobeiniki.mp3" loop class="audio"></audio>
+    <audio src="assets/music/deleteRow.mp3" class="delete"></audio>
+    <audio src="assets/music/drop.mp3" class="drop"></audio>
+    <div class="field__wrapper">
+        <h1 class="title">Tetris
+        </h1>
+        <div class="content">
+            <div class="description">
+                <p><b>Left</b>, <b>Right</b>, <b>Down</b> to <i>move</i></p>
+                <p><b>Up</b> to <i>rotate</i></p>
+                <p><b>Space</b> to <i>drop</i></p>
+                <br>
+                <p>Game duration is 2 minutes. Good luck!</p>
+                <div class="button__wrapper">
+                    <button class="start" autofocus="false">Start</button>
+                    <img src="assets/svg/sound-on.svg" alt="sound" class="sound">
+                    <p class="timer">
+                        02:00
+                </div>
+                <div class="table">
+                    <h2 class="table__title invisible">TOP SCORES</h2>
+                    <div class="record__wrapper">
+                        <div class="record__left">
+                            <p class="record"></p>
+                            <p class="record"></p>
+                            <p class="record"></p>
+                            <p class="record"></p>
+                            <p class="record"></p>
+                        </div>
+                        <div class="record__right">
+                            <p class="record"></p>
+                            <p class="record"></p>
+                            <p class="record"></p>
+                            <p class="record"></p>
+                            <p class="record"></p>
+                        </div>
+                    </div>
+                </div>
+                <p id="game-over" class="invisible">
+                    GAME OVER <br>
+                    your score: <span class="score">0</span></p>
+                <p class="new-game invisible">Press <b>Start</b> button to play again!</p>
+            </div>
+            <div class="field"></div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <p>2023 <a class="github-link" href="https://github.com/nadezhdanik" target="_blank">nadezhdanik</a>
+        </p>
+        <a class="rs-link" href="https://rs.school/js-stage0/" target="_blank"><img src="assets/svg/logo.svg"
+                alt="logo"></a>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
